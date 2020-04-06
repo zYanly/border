@@ -1,0 +1,55 @@
+.border {
+  position: relative;
+  width: 3.875rem;
+  height: 3.875rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background-color: red;
+  padding: 0 0.1875rem 0.5rem 0.1875rem;
+  margin-bottom: 0.1875rem;
+}
+.border::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: "";
+}
+.border::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: "";
+}
+.border .border-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.border .border-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: "";
+}
+.border .border-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: "";
+}
